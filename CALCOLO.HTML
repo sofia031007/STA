@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                width: 550px;
+                height: 330px;
+                background-color: MPITO SIMULAZIONErgb(239, 239, 31);
+                border: 2px solid black;
+                margin: 15px;
+                padding: 5px;
+                box-shadow: 0 2px 4px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>EURO:</p>
+            <input type="text" name="euro" id="euro">
+            <br>
+            <p>VALUTA SCELTA:</p>
+            <p id="forex"></p>
+            <br><br>
+            <button type="submit" onclick="conversionUSD();">Converti in dollari americani (USD)</button>
+            <button type="submit" onclick="conversionAUD()">Converti in dollari australiani (AUD)</button>
+            <button type="submit" onclick="conversionBRL()">Converti in real brasiliani (BRL)</button>
+            <button type="submit" onclick="conversionCAD()">Converti in dollari canadesi (CAD)</button>
+            <button type="submit" onclick="conversionCHF()">Converti in franchi svizzeri (CHF)</button>
+            <button type="submit" onclick="conversionCNY()">Converti in renmimbi (CNY)</button>
+            <button type="submit" onclick="conversionDKK()">Converti in corona danese (DKK)</button>
+            <button type="submit" onclick="conversionGBP()">Converti in sterline inglesi (GBP)</button>
+        </div>
+        <script>
+            function conversionUSD() {
+                let dollaroUS=document.getElementById("euro").value*1.06595;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionAUD() {
+                let dollaroUS=document.getElementById("euro").value*1.57554;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionBRL() {
+                let dollaroUS=document.getElementById("euro").value*5.5753;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionCAD() {
+                let dollaroUS=document.getElementById("euro").value*1.44975;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionCHF() {
+                let dollaroUS=document.getElementById("euro").value*0.999;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionCNY() {
+                let dollaroUS=document.getElementById("euro").value*7.3239;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionDKK() {
+                let dollaroUS=document.getElementById("euro").value*7.44337;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+            function conversionGBP() {
+                let dollaroUS=document.getElementById("euro").value*0.88516;
+                document.getElementById("forex").innerHTML=dollaroUS;
+            }
+   
+        </script>
+    </body>
+</html>
