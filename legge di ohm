@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo tensione e potenza in un conduttore</title>
+</head>
+<body>
+    <script>
+		function calcola() {
+	let resistenza = document.getElementById("resistenza").value;
+	let corrente = document.getElementById("corrente").value;
+	let tensione = resistenza * corrente;
+	let potenza = resistenza * corrente * corrente;
+	document.getElementById("tensione").innerHTML = tensione.toFixed(2);
+	document.getElementById("potenza").innerHTML = potenza.toFixed(2);
+    }
+</script>
+	
+	<h1>Calcolo Tensione e Potenza in un Conduttore</h1>
+	<p>Inserisci la resistenza del conduttore:</p>
+	<input type="number" id="resistenza"><label for="resistenza">ohm</label>
+	<p>Inserisci l'intensità della corrente:</p>
+	<input type="number" id="corrente"><label for="corrente">A</label>
+	<button onclick="calcola()">Calcola</button>
+	<p>Tensione: <span id="tensione"></span> V</p>
+	<p>Potenza: <span id="potenza"></span> W</p>
+	<script src="script.js"></script>
+    
+</body>
+</html>
